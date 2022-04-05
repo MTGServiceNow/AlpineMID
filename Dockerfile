@@ -47,6 +47,7 @@ RUN yum update -y && \
                     xmlstarlet \
                     curl \
                     net-tools \
+                    awscli \
                     iputils &&\
     yum clean packages -y && \
     rm -rf /tmp/*
