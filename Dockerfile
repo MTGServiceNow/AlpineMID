@@ -59,9 +59,9 @@ RUN yum update -y && \
 
 ARG MID_USERNAME=mid
 
-ARG GROUP_ID=1001
+ARG GROUP_ID=101
 
-ARG USER_ID=1001
+ARG USER_ID=101
 
 
 # ############################
@@ -107,6 +107,6 @@ HEALTHCHECK --interval=5m --start-period=3m --retries=3 --timeout=15s \
 
 WORKDIR /opt/snc_mid_server/
 
-USER $MID_USERNAME
+USER 101
 
 ENTRYPOINT ["/opt/snc_mid_server/init", "start"]
